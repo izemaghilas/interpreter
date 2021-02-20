@@ -1,5 +1,5 @@
-#interpreter
-##Grammar
+# interpreter
+## Grammar
 	QUERY: KEYWORD_SELECT (PROJECTION)+ KEYWORD_FROM TABLE_NAME ( (KEYWORD_WHERE SELECTION EOQ)|EOQ )
 	PROJECTION: PROJECT ','?
 	PROJECT: COLUMN_NAME RANGE? PREDICATE? 'NONE'
@@ -16,5 +16,5 @@
 	HOLD: 'ALL'|'ANY'
 	EOQ: ';'
 
-##Parsing algorithm
+## Parsing algorithm
 		recursive-descent parser (top-down)  
